@@ -1,0 +1,20 @@
+# Port Scanner Requirements
+
+# Core: Python standard library ONLY (no install needed)
+#   socket, threading, concurrent.futures, subprocess
+#   argparse, re, json, datetime, struct, os, platform
+
+# Optional — enhances features if installed:
+# paramiko>=3.0.0     # Enables SSH default credential checks
+#                     # pip install paramiko
+#
+# colorama>=0.4.6     # Windows ANSI color support only
+#                     # pip install colorama
+
+# ── Exploitation Awareness ─────────────────────────
+# SSH default credential checking requires paramiko:
+#   pip install paramiko
+#
+# SSH cipher auditing works WITHOUT paramiko via raw socket probing.
+# For deeper SSH audit, optionally install ssh-audit:
+#   pip install ssh-audit   (or: apt install ssh-audit)
